@@ -60,7 +60,8 @@ int main()
 {
     int n; //number of nodes
     Disjoint_set ds(n);
-    ds.union_by_size(1, 2); //to add the edge between node 1 and node 2
-
+    
+    ds.union_by_size(1, 2); //to add the edge between node 1 and node 2 to our disjoint set
+    ds.union_by_size(2, 5); //to add the edge between node 2 and node 5 to our disjoint set
     return 0;
 }
